@@ -1,6 +1,6 @@
 {
     "name": "cbrosnan/biblephp",
-    "description": "Laravel wrapper for the Free Use Bible API",
+    "description": "PHP wrapper for the Free Use Bible API",
     "type": "library",
     "license": "MIT",
     "keywords": [
