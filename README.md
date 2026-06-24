@@ -1,6 +1,6 @@
 # BiblePHP
 
-Laravel/PHP wrapper for the free Bible API to easily access it within your PHP application.
+Laravel/PHP wrapper for the Free Use Bible API to easily access it within your PHP application.
 
 ## Installation
 
@@ -66,7 +66,7 @@ $verse_render = BibleClient::renderVerseContent($verse);
 ```
 
 ## API Documentation
-This package is a PHP wrapper for the [Free Use Bible API](https://bible.helloao.org/docs/). This API is completely free and open to use, and the documentation can give a good overview for how to access it either using this wrapper or otherwise.
+This package is a PHP wrapper for the [Free Use Bible API](https://www.helloao.org/free-api). This API is completely free and open to use, and the [documentation](https://bible.helloao.org/docs/) can give a good overview for how to access it either using this wrapper or otherwise.
 
 ## License
 
