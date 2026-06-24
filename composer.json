@@ -1,0 +1,43 @@
+{
+    "name": "cbrosnan/biblephp",
+    "description": "Laravel wrapper for the Free Use Bible API",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "bible",
+        "api",
+        "scripture",
+        "literature"
+    ],
+    "authors": [
+        {
+            "name": "Chris Brosnan"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^12.0 || ^13.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^12.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CBrosnan\\BiblePhp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
