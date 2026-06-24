@@ -1,23 +1,23 @@
 <?php 
 
-namespace CBrosnan\BiblePhp\Rendering;
+namespace ChrisBrosnan\BiblePhp\Rendering;
 
 class RenderContent
 {
     /**
      * [renderVerseContent] Render the content of a specific verse from a chapter in the Bible API.
      * 
-     * @param array $verse An associative array containing the verse data.
+     * @param array $verseData An associative array containing the verse data.
      * @return string|null The rendered verse content as a string, or null if not available.
      */
-    public static function renderVerseContent($verse_data): string | null
+    public static function renderVerseContent($verseData): string | null
     {
         try {
-            if (!isset($verse_data['content'][0])) {
+            if (!isset($verseData['content'][0])) {
                 return null; // Return null if verse content is not available
             }
 
-            $verseString = $verse_data['content'][0] ?? null;
+            $verseString = $verseData['content'][0] ?? null;
 
             return $verseString;
         } catch (\Exception $e) {
@@ -28,12 +28,12 @@ class RenderContent
     /**
      * [renderChapterContent] Render the content of a specific chapter in the Bible API.
      * 
-     * @param array $chapter An associative array containing the chapter data.
+     * @param array $chapterData An associative array containing the chapter data.
      * @return string The rendered chapter content as a string.
      */
-    public static function renderChapterContent($chapter_data): string
+    public static function renderChapterContent($chapterData): string
     {
-        $verses = $chapter_data['chapter']['content'] ?? null;
+        $verses = $chapterData['chapter']['content'] ?? null;
         
         $chapterString = "";
         if ($verses !== null) {

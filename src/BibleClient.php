@@ -1,9 +1,9 @@
 <?php 
 
-namespace CBrosnan\BiblePhp;
+namespace ChrisBrosnan\BiblePhp;
 
-use CBrosnan\BiblePhp\Rendering\RenderContent;
-use CBrosnan\BiblePhp\ApiHelpers\Helpers;
+use ChrisBrosnan\BiblePhp\Rendering\RenderContent;
+use ChrisBrosnan\BiblePhp\ApiHelpers\Helpers;
 
 class BibleClient
 {    
@@ -39,6 +39,20 @@ class BibleClient
     public static function getChapter($translation, $book, $chapter): array
     {
         return Helpers::getChapter($translation, $book, $chapter);
+    }
+
+    /**
+     * [getVerse] Get a specific verse from a chapter in the Bible API.
+     * 
+     * @param string $translation The translation code (e.g., 'KJV').
+     * @param string $book The book name (e.g., 'John').
+     * @param int $chapter The chapter number.
+     * @param int $verse The verse number.
+     * @return array An associative array containing the verse text and related information.
+     */
+    public static function getVerse($translation, $book, $chapter, $verse): array
+    {
+        return Helpers::getVerse($translation, $book, $chapter, $verse);
     }
 
     /**
@@ -122,38 +136,24 @@ class BibleClient
     }
 
     /**
-     * [getVerse] Get a specific verse from a chapter in the Bible API.
-     * 
-     * @param string $translation The translation code (e.g., 'KJV').
-     * @param string $book The book name (e.g., 'John').
-     * @param int $chapter The chapter number.
-     * @param int $verse The verse number.
-     * @return array An associative array containing the verse text and related information.
-     */
-    public static function getVerse($translation, $book, $chapter, $verse): array
-    {
-        return Helpers::getVerse($translation, $book, $chapter, $verse);
-    }
-
-    /**
      * [renderVerseContent] Render the content of a specific verse from a chapter in the Bible API.
      * 
-     * @param array $verse_data An associative array containing the verse data.
+     * @param array $verseData An associative array containing the verse data.
      * @return string|null The rendered verse content as a string, or null if not available.
      */
-    public static function renderVerseContent($verse_data): string | null
+    public static function renderVerseContent($verseData): string | null
     {
-        return RenderContent::renderVerseContent($verse_data);
+        return RenderContent::renderVerseContent($verseData);
     }
 
     /**
      * [renderChapterContent] Render the content of a specific chapter in the Bible API.
      * 
-     * @param array $chapter An associative array containing the chapter data.
+     * @param array $chapterData An associative array containing the chapter data.
      * @return string The rendered chapter content as a string.
      */
-    public static function renderChapterContent($chapter_data): string
+    public static function renderChapterContent($chapterData): string
     {
-        return RenderContent::renderChapterContent($chapter_data);
+        return RenderContent::renderChapterContent($chapterData);
     }
 }
