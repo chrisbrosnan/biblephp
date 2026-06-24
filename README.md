@@ -71,4 +71,3 @@ This package is a PHP wrapper for the [Free Use Bible API](https://bible.helloao
 ## License
 
 MIT
-```
