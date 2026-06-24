@@ -1,6 +1,6 @@
 # BiblePHP
 
-Laravel/PHP wrapper for the free Bible API.
+Laravel/PHP wrapper for the free Bible API to easily access it within your PHP application.
 
 ## Installation
 
