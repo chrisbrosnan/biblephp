@@ -1,5 +1,8 @@
 # BiblePHP
 
+[![Latest Stable Version](https://poser.pugx.org/chrisbrosnan/biblephp/v)](https://packagist.org/packages/chrisbrosnan/biblephp)
+[![Total Downloads](https://poser.pugx.org/chrisbrosnan/biblephp/downloads)](https://packagist.org/packages/chrisbrosnan/biblephp)
+
 Laravel/PHP wrapper for the Free Use Bible API to easily access it within your PHP application.
 
 ## Installation
@@ -70,4 +73,4 @@ This package is a PHP wrapper for the [Free Use Bible API](https://www.helloao.o
 
 ## License
 
-MIT
+[![License](https://poser.pugx.org/chrisbrosnan/biblephp/license)](https://packagist.org/packages/chrisbrosnan/biblephp)
